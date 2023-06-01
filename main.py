@@ -1,2 +1,3 @@
-hola profesor andres hhj
+hola=float
 print("hola mundo")
+print("3")
