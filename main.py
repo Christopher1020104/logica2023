@@ -19,7 +19,7 @@ self.jugador_actual
 
 if self.verificar_ganador(self.jugador_actual):
      self.mostras_tablero()
-     print("¡jugador",self.jugador_actual,"usted ha sido el ganador!"
+     print("¡jugador",self.jugador_actual,"usted ha sido el ganador!")
 
      return True
 
@@ -41,15 +41,14 @@ if self.verificar_ganador(self.jugador_actual):
         for i in range(3):
             if self.tablero[0][i] == self.tablero[1][i] == self.tablero[2][i] == triqui:
                 return True
-        if self.tablero[0][0] == self.tablero[1][1] == self.tablero[2][2] == jugador:
+        if self.tablero[0][0] == self.tablero[1][1] == self.tablero[2][2] == triqui:
             return True
 
-        if self.tablero[0][2] == self.tablero[1][1] == self.tablero[2][0] == jugador:
+        if self.tablero[0][2] == self.tablero[1][1] == self.tablero[2][0] == triqui:
             return True
 
         return False
-
-# Función para jugar
+        
 def jugar_triqui():
     juego = Triqui()
 
