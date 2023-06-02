@@ -11,6 +11,12 @@ class Triqui:
             for j in range(3):
                 print(self.tablero[i][j], "|", end=" ")
             print("\n-------------")
+def realizar_moviemiento(self, fila, columna):
+    if self.tablero[fila][columna] == "":
+        self.tablero[fila][columna] =
+self.jugador_actual
+        self.moviemientos += 1
+            
 
 
             
