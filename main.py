@@ -22,6 +22,11 @@ class Triqui:
                 print("¡jugador",self.jugador_actual,"usted ha sido el ganador!")
                 return True
 
+            if self.verificar_ganador(self.jugador_actual):
+                self.mostras_tablero()
+                print("¡jugador",self.jugador_actual,"usted ha sido el ganador!")
+
+
             if self.movimientos == 9:
                 self.mostrar_tablero()
                 print("¡Empate!")
@@ -47,7 +52,7 @@ class Triqui:
             return True
 
         return False
-        
+
 def jugar_triqui():
     juego = Triqui()
 
