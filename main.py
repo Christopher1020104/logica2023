@@ -13,7 +13,7 @@ class Triqui:
             print("\n-------------")
      
     def realizar_movimiento(self, fila, columna):
-        if self.tablero[fila][columna] == "":
+        if self.tablero[fila][columna] == " ":
             self.tablero[fila][columna] = self.jugador_actual
             self.movimientos += 1
 
@@ -21,11 +21,6 @@ class Triqui:
                 self.mostrar_tablero()
                 print("¡jugador",self.jugador_actual,"usted ha sido el ganador!")
                 return True
-
-            if self.verificar_ganador(self.jugador_actual):
-                self.mostras_tablero()
-                print("¡jugador",self.jugador_actual,"usted ha sido el ganador!")
-
 
             if self.movimientos == 9:
                 self.mostrar_tablero()
