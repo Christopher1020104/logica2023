@@ -11,5 +11,6 @@ class Triqui:
             for j in range(3):
                 print(self.tablero[i][j], "|", end=" ")
             print("\n-------------")
+print (f)
 
             
