@@ -15,7 +15,7 @@ def realizar_movimiento(self, fila, columna):
     if self.tablero[fila][columna] == "":
         self.tablero[fila][columna] =
 self.jugador_actual
-        self.moviemientos += 1
+        self.movimientos += 1
 
 if self.verificar_ganador(self.jugador_actual):
      self.mostras_tablero()
