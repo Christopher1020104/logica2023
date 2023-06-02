@@ -21,3 +21,8 @@ if self.verificar_ganador(self.jugador_actual):
      self.mostras_tablero()
      print("¡jugador",self.jugador_actual,"ha ganado!")
      return True
+
+if self.movimientos ==9:
+     self.mostras_tablero()
+     print("¡empate!")
+     return True
