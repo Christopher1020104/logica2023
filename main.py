@@ -4,26 +4,25 @@ class Triqui:
         self.jugador_actual = "X"
         self.movimientos = 0
 
-        def mostrar_tablero(self):
+    def mostrar_tablero(self):
         print("-------------")
         for i in range(3):
             print("|", end=" ")
             for j in range(3):
                 print(self.tablero[i][j], "|", end=" ")
             print("\n-------------")
-def realizar_movimiento(self, fila, columna):
-    if self.tablero[fila][columna] == "":
-        self.tablero[fila][columna] =
-self.jugador_actual
-        self.movimientos += 1
+     
+    def realizar_movimiento(self, fila, columna):
+        if self.tablero[fila][columna] == "":
+            self.tablero[fila][columna] = self.jugador_actual
+            self.movimientos += 1
 
-if self.verificar_ganador(self.jugador_actual):
-     self.mostras_tablero()
-     print("¡jugador",self.jugador_actual,"usted ha sido el ganador!")
+            if self.verificar_ganador(self.jugador_actual):
+                self.mostrar_tablero()
+                print("¡jugador",self.jugador_actual,"usted ha sido el ganador!")
+                return True
 
-     return True
-
-     if self.movimientos == 9:
+            if self.movimientos == 9:
                 self.mostrar_tablero()
                 print("¡Empate!")
                 return True
