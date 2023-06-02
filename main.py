@@ -26,3 +26,8 @@ if self.movimientos ==9:
      self.mostras_tablero()
      print("¡empate!")
      return True
+
+self.jugador_actual = "O" IF self.jugador_actual === "X" else "X"
+       else:
+print(" ese espacio esta ocupado, seleciona otro")
+return False
