@@ -11,7 +11,7 @@ class Triqui:
             for j in range(3):
                 print(self.tablero[i][j], "|", end=" ")
             print("\n-------------")
-def realizar_moviemiento(self, fila, columna):
+def realizar_movimiento(self, fila, columna):
     if self.tablero[fila][columna] == "":
         self.tablero[fila][columna] =
 self.jugador_actual
@@ -34,17 +34,17 @@ if self.verificar_ganador(self.jugador_actual):
         
         return False
 
-    def verificar_ganador(self, triqui):
+    def verificar_ganador(self, jugador):
         for i in range(3):
-            if self.tablero[i][0] == self.tablero[i][1] == self.tablero[i][2] == triqui:
+            if self.tablero[i][0] == self.tablero[i][1] == self.tablero[i][2] == jugador:
                 return True
         for i in range(3):
-            if self.tablero[0][i] == self.tablero[1][i] == self.tablero[2][i] == triqui:
+            if self.tablero[0][i] == self.tablero[1][i] == self.tablero[2][i] == jugador:
                 return True
-        if self.tablero[0][0] == self.tablero[1][1] == self.tablero[2][2] == triqui:
+        if self.tablero[0][0] == self.tablero[1][1] == self.tablero[2][2] == jugador:
             return True
 
-        if self.tablero[0][2] == self.tablero[1][1] == self.tablero[2][0] == triqui:
+        if self.tablero[0][2] == self.tablero[1][1] == self.tablero[2][0] == jugador:
             return True
 
         return False
