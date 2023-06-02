@@ -30,7 +30,7 @@ if self.verificar_ganador(self.jugador_actual):
 
             self.jugador_actual = "O" if self.jugador_actual == "X" else "X"
         else:
-            print("Este cuadro ya esta utilizado. Intente marcando en otro cuadro.")
+            print("Este recuadro ya esta utilizado. Intente marcando otro recuadro.")
         
         return False
 
