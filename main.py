@@ -19,49 +19,35 @@ self.jugador_actual
 
 if self.verificar_ganador(self.jugador_actual):
      self.mostras_tablero()
-     print("¡jugador",self.jugador_actual,"ha ganado!")
+     print("¡jugador",self.jugador_actual,"usted ha sido el ganador!"
+
      return True
 
-if self.movimientos ==9:
-     self.mostras_tablero()
-     print("¡empate!")
-     return True
-
-self.jugador_actual = "O" IF self.jugador_actual === "X" else "X"
-       else:
-print(" ese espacio esta ocupado, seleciona otro")
-return False
- if self.movimientos == 9:
+     if self.movimientos == 9:
                 self.mostrar_tablero()
                 print("¡Empate!")
                 return True
 
             self.jugador_actual = "O" if self.jugador_actual == "X" else "X"
         else:
-            print("Esa casilla ya está ocupada. Intenta de nuevo.")
+            print("Este cuadro ya esta utilizado. Intente marcando en otro cuadro.")
         
         return False
 
     def verificar_ganador(self, triqui):
-        # Verificar filas
         for i in range(3):
             if self.tablero[i][0] == self.tablero[i][1] == self.tablero[i][2] == triqui:
                 return True
-
-        # Verificar columnas
         for i in range(3):
             if self.tablero[0][i] == self.tablero[1][i] == self.tablero[2][i] == triqui:
                 return True
-
-        # Verificar diagonales
-        if self.tablero[0][0] == self.tablero[1][1] == self.tablero[2][2] == triqui:
+        if self.tablero[0][0] == self.tablero[1][1] == self.tablero[2][2] == jugador:
             return True
 
-        if self.tablero[0][2] == self.tablero[1][1] == self.tablero[2][0] == triqui:
+        if self.tablero[0][2] == self.tablero[1][1] == self.tablero[2][0] == jugador:
             return True
 
         return False
-
 
 # Función para jugar
 def jugar_triqui():
@@ -77,3 +63,6 @@ def jugar_triqui():
             break
 
 jugar_triqui()
+
+
+      
